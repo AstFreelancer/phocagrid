@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content">
+	<name>plg_phocagrid</name>
+	<author>AstFreelancer</author>
+	<creationDate>2017</creationDate>
+	<copyright>(c) AstFreelancer</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>astfreelancer@mail.ru</authorEmail>
+	<authorUrl>asoiu.ru</authorUrl>
+	<version>1.0</version>
+	<description>PLG_PHOCAGRID</description>
+	<files>
+		<filename plugin="phocagrid">phocagrid.php</filename>
+		<filename plugin="phocagrid">phocagrid.xml</filename>
+		<filename plugin="phocagrid">photo.php</filename>
+		<filename plugin="phocagrid">row.php</filename>
+		<filename plugin="phocagrid">styles.css</filename>
+		<filename>index.html</filename>
+	</files>
+	<administration>
+		<languages>
+			<language tag="en-GB">en-GB.plg_content_phocagrid.ini</language>
+			<language tag="en-GB">en-GB.plg_content_phocagrid.sys.ini</language>
+		</languages>
+	</administration>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="ncols" type="radio"
+					default="4"
+					description="JFIELD_PLG_PHOCAGRID_NCOLS_DESC"
+					label="JFIELD_PLG_PHOCAGRID_NCOLS_LABEL"
+				>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</field>
+
+				<field name="width" type="text"
+					default="500"
+					description="JFIELD_PLG_PHOCAGRID_WIDTH_DESC"
+					label="JFIELD_PLG_PHOCAGRID_WIDTH_LABEL"	
+					size="10"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
